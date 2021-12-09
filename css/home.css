@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 1px;
+}
+
+section
+{
+  width: 100%;
+  height: 100vh;
+  background: url(../img/food_back.jpg);
+  background-size: cover;
+}
+
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 69%;
+  height: 70%;
+  background: #fff
+}
+
+.container .top
+{
+  position: relative;
+  width: 100%;
+  height: 10%;
+  bottom: 45px;
+  float: right;
+  box-sizing: border-box;
+  background: #5F9EA0;
+}
+
+.top .button1
+    {
+      position: relative;
+      top: 5.5px;
+      left: 915px;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      background: #5F9EA0;
+      border: none;
+      border-radius: 50px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .top .button1:hover
+    {
+      background: #008168;
+    }
+    
+    .top .button1:active 
+    {
+      background: #006e58;
+    }
+    
+    .top .button_profile
+    {
+      display: inline-flex;
+      padding-top: 5px;
+      padding-left: 2px;
+      color: #fff;
+      height: 100%;
+      font-size: 2.5em;
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .top .button2
+    {
+      position: relative;
+      top: 5px;
+      left: 920px;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      background: #5F9EA0;
+      border: none;
+      border-radius: 50px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .top .button2:hover
+    {
+      background: #008168;
+    }
+    
+    .top .button2:active 
+    {
+      background: #006e58;
+    }
+
+    .top .button_logout
+    {
+      display: inline-flex;
+      padding-top: 5px;
+      padding-left: 5px;
+      color: #fff;
+      height: 100%;
+      font-size: 2.4em;
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+.container .button_submit
+    {
+      position: relative;
+      top: 400px; 
+      left: 470px;
+      color: #000;
+      background: #5F9EA0;
+      font-size: 25px;
+      font-weight: bold;
+      width: 140px;
+      height: 45px;
+      border: 1px solid black;
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .container .button_submit:hover
+    {
+      background: #5F9EA0;
+    }
+    .container .button_submit:active 
+    {
+      background: #006e58;
+    }
+
+.container .box1
+{
+  position: relative;
+  width: 45%;
+  height: 45%;
+  left: 40px;
+  top:15%;
+  border-radius: 55px;
+  border: #000 solid ;
+  box-sizing: border-box;
+  background: rgba(191, 230, 169,85%);
+  text-align:center;
+}
+
+.container .box1 h2
+{
+  color: #262626;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container .box1 input
+{
+  color: #000;
+  background: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  width: 220px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+
+
+.container .box2
+{
+  position: relative;
+  width: 45%;
+  height: 45%;
+  left: 540px;
+  bottom: 30%;
+  border-radius: 55px;
+  border: #000 solid ;
+  box-sizing: border-box;
+  background: rgba(191, 230, 169,85%);
+  text-align:center;
+}
+
+.container  .Kcal input
+{
+  position: relative;
+  width: 25%;
+  height: 25px;
+  right: 115px;
+  bottom: 5%;
+  border: grey solid ;
+  background: #ffffff;  
+}
+
+.container .Protien input
+{
+  position: relative;
+  width: 25%;
+  height: 25px;
+  left: 24%;
+  bottom: 120px;
+  border: grey solid ;
+  background: #ffffff;
+}
+
+.container .Fat input
+{
+  position: relative;
+  width: 25%;
+  height: 25px;
+  right: 120px;
+  bottom: 152px;
+  border: grey solid ;
+  background: #ffffff;
+}
+
+.container .Vitamins input
+{
+  position: relative;
+  width: 25%;
+  height: 25px;
+  left: 110px;
+  bottom: 273px;
+  border:grey solid ;
+  background: #ffffff;
+}

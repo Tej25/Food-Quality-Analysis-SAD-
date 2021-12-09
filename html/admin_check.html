@@ -1,0 +1,71 @@
+<?php
+  include("../php/authorise_session.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Check</title>
+  <link rel="stylesheet" href="../css/admin_home.css">
+  <script src="../javascript/admin_request.js"></script>
+  <script src="../javascript/confirm.js"></script>
+  <script src="../javascript/reject.js"></script>
+  <script src="../javascript/admin_logout.js"></script>
+</head>
+
+<style>
+  span {
+    padding: 1px 8px;
+  }
+
+  span::after {
+    content: '\a';
+    white-space: pre;
+  }
+</style>
+
+<body onload="admin_request()">
+  <section>
+    <div class="container">
+      <h1 style="position: relative; top: 60px; text-align: center" >ADMIN FOOD CONFIRM</h1>
+      <button type="button" class="button_submit" value="SUBMIT" onclick="confirm()" cursor="pointer">CONFIRM </button>
+      <button type="button" class="button_submit" value="SUBMIT" onclick="reject()" cursor="pointer">DECLINE </button>
+
+      <div class="top">
+        <button type="button" class="button2" onclick="admin_logout()">
+          <span class="button_logout">
+            <ion-icon name="log-out"></ion-icon>
+          </span>
+        </button>
+      </div>
+      <div class="box1">
+        <h2 style="position: relative; top: 10px">FOOD Item</h2>
+        <input type="text" id="Food" name="" required="" style="position: relative; top: 10px; text-align: center"><span></span>
+      </div>
+      <div class="box2">
+        <h2 style="position: relative; right: 120px">Kcal</h2>
+        <div class="Kcal">
+          <input type="text" id="Kcal" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; left: 110px; bottom: 100px">Protien</h2><br>
+        <div class="Protien">
+          <input type="text" id="Prot" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; right: 115px; bottom: 120px">Fat</h2><br>
+        <div class="Fat">
+          <input type="text" id="Fats" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; left: 105px; bottom: 240px">Grams</h2><br>
+        <div class="Vitamins">
+          <input type="text" id="Gram" name="" required="" style="position: relative; text-align: center">
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

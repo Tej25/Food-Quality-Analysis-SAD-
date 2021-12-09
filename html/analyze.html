@@ -1,0 +1,74 @@
+<?php
+  include("../php/authorise_session.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyze</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script src="../javascript/home_button.js"></script>
+  <script src="../javascript/user_logout.js"></script>
+  <script src="../javascript/profile_redirect.js"></script>
+</head>
+
+<style>
+  span {
+    padding: 1px 8px;
+  }
+
+  span::after {
+    content: '\a';
+    white-space: pre;
+  }
+</style>
+
+<body>
+  <section>
+    <div class="container">
+      <button type="button" class="button_submit" value="SUBMIT" onclick="home_button()" cursor="pointer";>SUBMIT </button>
+      <a style="position: relative; top: 460px; left: 280px; text-decoration: none;"
+             href="http://localhost/SAD_J_COMP/html/not_found.html">Item not present? Click here</a>
+      <div class="top">
+        <button type="button" class="button1" onclick="profile_redirect()">
+          <span class="button_profile">
+            <ion-icon name="person-circle-sharp"></ion-icon>
+          </span>
+        </button>
+        <button type="button" class="button2" onclick="user_logout()">
+          <span class="button_logout">
+            <ion-icon name="log-out"></ion-icon>
+          </span>
+        </button>
+      </div>
+      <div class="box1">
+        <h2 style="position: relative; top: 10px">SEARCH FOOD</h2>
+        <input type="text" id="input" name="" required="" style="position: relative; top: 10px; text-align: center"><span></span>
+      </div>
+      <div class="box2">
+        <h2 style="position: relative; right: 120px">Kcal</h2>
+        <div class="Kcal">
+          <input type="text" id="Kcal" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; left: 110px; bottom: 100px">Protien</h2><br>
+        <div class="Protien">
+          <input type="text" id="Prot" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; right: 115px; bottom: 120px">Fat</h2><br>
+        <div class="Fat">
+          <input type="text" id="Fats" name="" required="" style="position: relative; text-align: center">
+        </div>
+        <h2 style="position: relative; left: 105px; bottom: 240px">Grams</h2><br>
+        <div class="Vitamins">
+          <input type="text" id="Gram" name="" required="" style="position: relative; text-align: center">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

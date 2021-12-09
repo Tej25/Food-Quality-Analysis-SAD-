@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<style>
+  span {
+    padding: 1px 8px;
+  }
+
+  span::after {
+    content: '\a';
+    white-space: pre;
+  }
+</style>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="form_content">
+        <div style="position:fixed; left:75px; top:60%">
+          <h2><span>Let's check your</span>
+            <span>Nutrient Intake</span>
+          </h2>
+        </div>
+      </div>
+      <div class="login_form">
+        <h1>Sign In</h1>
+        <h6> Please sign in to continue</h6>
+        <form action = "../php/login.php" method = "POST">
+          <input type="email" name="email" id="myEmail" required="" placeholder="Your Email"><br>
+          <input type="password" name="password" required="" placeholder="Password"><br>
+          <input type="submit" name="submit" value="Login">
+        </form>
+        <span></span>
+        <span></span><a href="http://localhost/SAD_J_COMP/html/registration.html">Don't have a account? Sign Up</a>
+      </div>
+  </section>
+
+</body>
+
+</html>

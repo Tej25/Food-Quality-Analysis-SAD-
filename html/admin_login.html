@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="../css/admin_login.css">
+
+</head>
+<style>
+  span {
+    padding: 1px 8px;
+  }
+
+  span::after {
+    content: '\a';
+    white-space: pre;
+  }
+</style>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="form_content">
+        <div style="position:fixed; left:75px; top:60%">
+          <h2><span>Let's check your</span>
+            <span>Nutrient Intake</span>
+          </h2>
+        </div>
+      </div>
+      <div class="login_form">
+        <h1>Admin Sign In</h1>
+        <h6> Please sign in to continue</h6>
+        <form action = "../php/admin_login.php" method = "POST">
+          <input type="email" name="email" id="myEmail" required="" placeholder="Your Email"><br>
+          <input type="password" name="password" required="" placeholder="Password"><br>
+          <input type="submit" name="submit" value="Login">
+        </form>
+      </div>
+  </section>
+</body>
+</html>

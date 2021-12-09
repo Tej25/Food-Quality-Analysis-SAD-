@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="../css/registration.css">
+  <script src="../javascript/registration_check_pass.js"></script>
+</head>
+
+<style>
+  span {
+    padding: 1px 8px;
+  }
+   span::after {
+    content: '\a';
+    white-space: pre;
+  }
+</style>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="form_content">
+        <div style="position:fixed; left:75px; top:60%">
+          <h2><span>Let's check your</span>
+            <span>Nutrient Intake</span>
+          </h2>
+        </div>
+      </div>
+      <div class="login_form">
+        <h1>Create Account</h1>
+        <h6>Please fill your information</h6>
+        <form action = "../php/registration.php" method = "POST">
+                <input type="text" name="name" required="" placeholder="name">
+          <span>
+                <input type="email" name="email" id="email" required="" placeholder="Email">
+          </span>
+                <input type="password" name="password" id="password" required="" placeholder="Password" onchange="check_pass()">
+          <span>
+                <input type="password" name="confirm_password" id="confirm_password" required="" placeholder="Confirm Password" onchange="check_pass()">
+          </span>
+                <input type="submit" id="submit" name="submit" value="Sign Up">
+        </form>
+        <a href="http://localhost/SAD_J_COMP/html/login.html">Already have a account? Sign In</a> 
+      </div>
+      </section>
+
+</body>
+</html>
